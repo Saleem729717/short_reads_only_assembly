@@ -6,4 +6,5 @@
 *bai
 # ignore intermediate files 
 *.tmp
-*.log
+*.log 
+
