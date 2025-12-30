@@ -39,12 +39,11 @@ echo "[Step 2] Creating workflow directories..."
 mkdir -p 01_qc_before_processing
 echo "  ✓ Created: 01_qc_before_processing"
 
-mkdir -p 02_proces_reads
-echo "  ✓ Created: 02_proces_reads"
+mkdir -p 02_process_reads
+echo "  ✓ Created: 02_process_reads"
 
-echo "  ✓ Created: 03_qc_after-processing"
-mkdir -p 03_qc_after-processing
-
+echo "  ✓ Created: 03_qc_after_processing"
+mkdir -p 03_qc_after_processing
 
 # Summary
 echo ""
@@ -69,3 +68,25 @@ fastqc -o reports --extract --svg -t 20 "${BASE_DIR}/00_raw_reads/"*.fastq.gz
 #run multiqc on fastqc files #expert level 
 conda activate 02_multiqc
 multiqc -p -o "${BASE_DIR}/01_qc_before_processing/multiqc/fastqc_multiqc" ./ 
+
+# run fastp for read trimming and filtering
+cd  "${BASE_DIR}/02_process_reads"
+conda activate 01_short_read_qc
+fastp \
+    -i "${BASE_DIR}/00_raw_reads/SRR8893090_1.fastq.gz" -I "${BASE_DIR}/00_raw_reads/SRR8893090_2.fastq.gz" \
+    -o SRR8893090_1.processed.fastq.gz -O SRR8893090_2.processed.fastq.gz \
+    -q 25 \
+    -h "${BASE_DIR}/03_qc_after_processing/fastp_report.html" \
+    -j "${BASE_DIR}/03_qc_after_processing/fastp_report.json" \
+    -w 16
+
+# fastqc and multiqc on processed reads
+cd "${BASE_DIR}/03_qc_after_processing"
+conda activate 01_short_read_qc
+mkdir reports_fastqc_processed
+fastqc -o reports_fastqc_processed --extract --svg -t 20 "${BASE_DIR}/02_process_reads/"*.processed.fastq.gz
+#run multiqc on fastqc files of processed reads
+conda activate 02_multiqc
+multiqc -p -o "${BASE_DIR}/03_qc_after_processing/multiqc/fastqc_multiqc_processsed" ./
+echo ""
+echo "quality control and read processing completed"

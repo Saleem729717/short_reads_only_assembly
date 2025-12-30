@@ -1,0 +1,3 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	SRR8893090_2.processed	/home/saleem/03_wgs_assembly/short_reads_only_assembly/03_qc_after_processing/reports_fastqc_processed/SRR8893090_2.processed_fastqc/fastqc_data.txt
+FastQC	all_sections	SRR8893090_1.processed	/home/saleem/03_wgs_assembly/short_reads_only_assembly/03_qc_after_processing/reports_fastqc_processed/SRR8893090_1.processed_fastqc/fastqc_data.txt

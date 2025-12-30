@@ -1,0 +1,66 @@
+[2025-12-29 01:37:59,440] multiqc                                            [DEBUG  ]  No MultiQC config found: /home/saleem/miniconda3/envs/02_multiqc/lib/python2.7/site-packages/multiqc-1.0.dev0-py2.7.egg/multiqc_config.yaml
+[2025-12-29 01:37:59,440] multiqc                                            [DEBUG  ]  No MultiQC config found: /home/saleem/.multiqc_config.yaml
+[2025-12-29 01:37:59,440] multiqc                                            [DEBUG  ]  No MultiQC config found: multiqc_config.yaml
+[2025-12-29 01:37:59,440] multiqc                                            [DEBUG  ]  Command used: /home/saleem/miniconda3/envs/02_multiqc/bin/multiqc -p -o /home/saleem/03_wgs_assembly/short_reads_only_assembly/03_qc_after_processing/multiqc/fastqc_multiqc_processsed ./
+[2025-12-29 01:37:59,440] multiqc                                            [DEBUG  ]  Could not connect to multiqc.info for version check
+[2025-12-29 01:37:59,440] multiqc                                            [INFO   ]  This is MultiQC v1.0.dev0
+[2025-12-29 01:37:59,440] multiqc                                            [DEBUG  ]  Command     : /home/saleem/miniconda3/envs/02_multiqc/bin/multiqc -p -o /home/saleem/03_wgs_assembly/short_reads_only_assembly/03_qc_after_processing/multiqc/fastqc_multiqc_processsed ./
+[2025-12-29 01:37:59,440] multiqc                                            [DEBUG  ]  Working dir : /home/saleem/03_wgs_assembly/short_reads_only_assembly/03_qc_after_processing
+[2025-12-29 01:37:59,440] multiqc                                            [INFO   ]  Template    : default
+[2025-12-29 01:37:59,440] multiqc                                            [INFO   ]  Searching './'
+[2025-12-29 01:37:59,440] multiqc                                            [DEBUG  ]  Analysing modules: custom_content, peddy, methylQA, qualimap, preseq, quast, rseqc, busco, goleft_indexcov, snpeff, gatk, htseq, bcftools, featureCounts, picard, prokka, samblaster, samtools, bamtools, bismark, hicup, salmon, kallisto, slamdunk, star, tophat, bowtie2, bowtie1, cutadapt, trimmomatic, skewer, fastq_screen, fastqc, clusterflow
+[2025-12-29 01:37:59,440] multiqc                                            [DEBUG  ]  Using temporary directory for creating report: /tmp/tmpPRRihJ
+[2025-12-29 01:37:59,610] multiqc.modules.custom_content.custom_content      [DEBUG  ]  No custom content found
+[2025-12-29 01:37:59,613] multiqc.modules.peddy.peddy                        [DEBUG  ]  Could not find any reports in ('./',)
+[2025-12-29 01:37:59,614] multiqc.modules.methylQA.methylQA                  [DEBUG  ]  Could not find any reports in ('./',)
+[2025-12-29 01:37:59,615] multiqc.modules.qualimap.QM_BamQC                  [DEBUG  ]  Using default Qualimap thresholds: 1, 5, 10, 30, 50
+[2025-12-29 01:37:59,618] multiqc.modules.qualimap.qualimap                  [DEBUG  ]  Could not find any reports in ('./',)
+[2025-12-29 01:37:59,629] multiqc.modules.preseq.preseq                      [DEBUG  ]  Could not find any preseq data in ('./',)
+[2025-12-29 01:37:59,631] multiqc.modules.quast.quast                        [DEBUG  ]  Could not find any reports in ('./',)
+[2025-12-29 01:37:59,663] multiqc.modules.rseqc.rseqc                        [DEBUG  ]  Could not find any reports in ('./',)
+[2025-12-29 01:37:59,664] multiqc.modules.busco.busco                        [DEBUG  ]  Could not find any reports in ('./',)
+[2025-12-29 01:37:59,666] multiqc.modules.goleft_indexcov.goleft_indexcov    [DEBUG  ]  Did not find goleft indexcov outputs in ('./',)
+[2025-12-29 01:37:59,674] multiqc.modules.snpeff.snpeff                      [DEBUG  ]  Could not find any data in ('./',)
+[2025-12-29 01:37:59,682] multiqc.modules.gatk.gatk                          [DEBUG  ]  Could not find any reports in ('./',)
+[2025-12-29 01:37:59,690] multiqc.modules.htseq.htseq                        [DEBUG  ]  Could not find any reports in ('./',)
+[2025-12-29 01:37:59,698] multiqc.modules.bcftools.bcftools                  [DEBUG  ]  Could not find any reports in ('./',)
+[2025-12-29 01:37:59,700] multiqc.modules.featureCounts.feature_counts       [DEBUG  ]  Could not find any reports in ('./',)
+[2025-12-29 01:37:59,776] multiqc.modules.picard.picard                      [DEBUG  ]  Could not find any reports in ('./',)
+[2025-12-29 01:37:59,777] multiqc.modules.prokka.prokka                      [DEBUG  ]  Could not find any Prokka data in ('./',)
+[2025-12-29 01:37:59,785] multiqc.modules.samblaster.samblaster              [DEBUG  ]  Could not find any data in ('./',)
+[2025-12-29 01:37:59,808] multiqc.modules.samtools.samtools                  [DEBUG  ]  Could not find any reports in ('./',)
+[2025-12-29 01:37:59,817] multiqc.modules.bamtools.bamtools                  [DEBUG  ]  Could not find any reports in ('./',)
+[2025-12-29 01:37:59,820] multiqc.modules.bismark.bismark                    [DEBUG  ]  Could not find any reports in ('./',)
+[2025-12-29 01:37:59,821] multiqc.modules.hicup.hicup                        [DEBUG  ]  Could not find any HiCUP data in ('./',)
+[2025-12-29 01:37:59,823] multiqc.modules.salmon.salmon                      [DEBUG  ]  Could not find any Salmon data in ('./',)
+[2025-12-29 01:37:59,831] multiqc.modules.kallisto.kallisto                  [DEBUG  ]  Could not find any reports in ('./',)
+[2025-12-29 01:37:59,874] multiqc.modules.slamdunk.slamdunk                  [DEBUG  ]  No slamdunk reports found.
+[2025-12-29 01:37:59,876] multiqc.modules.star.star                          [DEBUG  ]  Could not find any reports in ('./',)
+[2025-12-29 01:37:59,878] multiqc.modules.tophat.tophat                      [DEBUG  ]  Could not find any reports in ('./',)
+[2025-12-29 01:37:59,886] multiqc.modules.bowtie2.bowtie2                    [DEBUG  ]  Could not find any reports in ('./',)
+[2025-12-29 01:37:59,894] multiqc.modules.bowtie1.bowtie1                    [DEBUG  ]  Could not find any reports in ('./',)
+[2025-12-29 01:37:59,902] multiqc.modules.cutadapt.cutadapt                  [DEBUG  ]  Could not find any reports in ('./',)
+[2025-12-29 01:37:59,910] multiqc.modules.trimmomatic.trimmomatic            [DEBUG  ]  Could not find any Trimmomatic data in ('./',)
+[2025-12-29 01:37:59,918] multiqc.modules.skewer.skewer                      [DEBUG  ]  Could not find any data in ('./',)
+[2025-12-29 01:37:59,919] multiqc.modules.fastq_screen.fastq_screen          [DEBUG  ]  Could not find any reports in ('./',)
+[2025-12-29 01:37:59,926] multiqc.modules.fastqc.fastqc                      [DEBUG  ]  Skipping 'SRR8893090_2.processed_fastqc.zip' as already parsed 'SRR8893090_2.processed'
+[2025-12-29 01:37:59,926] multiqc.modules.fastqc.fastqc                      [DEBUG  ]  Skipping 'SRR8893090_1.processed_fastqc.zip' as already parsed 'SRR8893090_1.processed'
+[2025-12-29 01:37:59,927] multiqc.modules.fastqc.fastqc                      [INFO   ]  Found 2 reports
+[2025-12-29 01:38:01,967] multiqc.modules.clusterflow.clusterflow            [DEBUG  ]  Could not find any reports in ('./',)
+[2025-12-29 01:38:01,968] multiqc                                            [INFO   ]  Report      : multiqc/fastqc_multiqc_processsed/multiqc_report.html
+[2025-12-29 01:38:01,968] multiqc                                            [INFO   ]  Data        : multiqc/fastqc_multiqc_processsed/multiqc_data
+[2025-12-29 01:38:01,968] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpPRRihJ/multiqc_data/mqc_fastqc_per_sequence_gc_content_plot_Percentages.txt' to '/home/saleem/03_wgs_assembly/short_reads_only_assembly/03_qc_after_processing/multiqc/fastqc_multiqc_processsed/multiqc_data'
+[2025-12-29 01:38:01,968] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpPRRihJ/multiqc_data/multiqc_sources.txt' to '/home/saleem/03_wgs_assembly/short_reads_only_assembly/03_qc_after_processing/multiqc/fastqc_multiqc_processsed/multiqc_data'
+[2025-12-29 01:38:01,968] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpPRRihJ/multiqc_data/multiqc_general_stats.txt' to '/home/saleem/03_wgs_assembly/short_reads_only_assembly/03_qc_after_processing/multiqc/fastqc_multiqc_processsed/multiqc_data'
+[2025-12-29 01:38:01,968] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpPRRihJ/multiqc_data/mqc_fastqc_per_base_sequence_quality_plot_1.txt' to '/home/saleem/03_wgs_assembly/short_reads_only_assembly/03_qc_after_processing/multiqc/fastqc_multiqc_processsed/multiqc_data'
+[2025-12-29 01:38:01,968] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpPRRihJ/multiqc_data/mqc_fastqc_sequence_length_distribution_plot_1.txt' to '/home/saleem/03_wgs_assembly/short_reads_only_assembly/03_qc_after_processing/multiqc/fastqc_multiqc_processsed/multiqc_data'
+[2025-12-29 01:38:01,969] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpPRRihJ/multiqc_data/mqc_fastqc_per_sequence_quality_scores_plot_1.txt' to '/home/saleem/03_wgs_assembly/short_reads_only_assembly/03_qc_after_processing/multiqc/fastqc_multiqc_processsed/multiqc_data'
+[2025-12-29 01:38:01,969] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpPRRihJ/multiqc_data/mqc_fastqc_per_base_n_content_plot_1.txt' to '/home/saleem/03_wgs_assembly/short_reads_only_assembly/03_qc_after_processing/multiqc/fastqc_multiqc_processsed/multiqc_data'
+[2025-12-29 01:38:01,969] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpPRRihJ/multiqc_data/mqc_fastqc_sequence_duplication_levels_plot_1.txt' to '/home/saleem/03_wgs_assembly/short_reads_only_assembly/03_qc_after_processing/multiqc/fastqc_multiqc_processsed/multiqc_data'
+[2025-12-29 01:38:01,969] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpPRRihJ/multiqc_data/multiqc_fastqc.txt' to '/home/saleem/03_wgs_assembly/short_reads_only_assembly/03_qc_after_processing/multiqc/fastqc_multiqc_processsed/multiqc_data'
+[2025-12-29 01:38:01,969] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpPRRihJ/multiqc_data/mqc_fastqc_per_sequence_gc_content_plot_Counts.txt' to '/home/saleem/03_wgs_assembly/short_reads_only_assembly/03_qc_after_processing/multiqc/fastqc_multiqc_processsed/multiqc_data'
+[2025-12-29 01:38:01,969] multiqc                                            [INFO   ]  Plots       : multiqc/fastqc_multiqc_processsed/multiqc_plots
+[2025-12-29 01:38:01,969] multiqc                                            [DEBUG  ]  Moving plots directory from '/tmp/tmpPRRihJ/multiqc_plots/png' to '/home/saleem/03_wgs_assembly/short_reads_only_assembly/03_qc_after_processing/multiqc/fastqc_multiqc_processsed/multiqc_plots'
+[2025-12-29 01:38:01,970] multiqc                                            [DEBUG  ]  Moving plots directory from '/tmp/tmpPRRihJ/multiqc_plots/pdf' to '/home/saleem/03_wgs_assembly/short_reads_only_assembly/03_qc_after_processing/multiqc/fastqc_multiqc_processsed/multiqc_plots'
+[2025-12-29 01:38:01,971] multiqc                                            [DEBUG  ]  Moving plots directory from '/tmp/tmpPRRihJ/multiqc_plots/svg' to '/home/saleem/03_wgs_assembly/short_reads_only_assembly/03_qc_after_processing/multiqc/fastqc_multiqc_processsed/multiqc_plots'
+[2025-12-29 01:38:02,018] multiqc                                            [INFO   ]  MultiQC complete

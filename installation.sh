@@ -23,3 +23,5 @@ conda install bioconda::multiqc
 conda create -n 02_multiqc -y
 conda activate 02_multiqc 
 conda install bioconda::multiqc -y
+
+#
