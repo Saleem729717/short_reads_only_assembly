@@ -1,1 +1,71 @@
-*.gz
+# ignore fastq files 
+*fastq
+*fastq.gz
+# ignore bam files
+*bam
+*bai
+# ignore intermediate files 
+*.tmp
+*.log 
+
+# Large bioinformatics files
+*.fa
+*.fa.gz
+*.fasta
+*.fasta.gz
+*.bam
+*.sam
+*.vcf.gz
+*.bed.gz
+*.bigwig
+
+# Data directories
+data/
+raw_data/
+results/
+
+# Large sequence files
+*.fa
+*.fa.gz
+*.fasta
+*.fasta.gz
+*.fna
+*.fna.gz
+
+# Assembly files
+assembly.fa
+my_assembly.fa
+*assembly*.fa
+
+# Common large bioinformatics files
+*.bam
+*.sam
+*.vcf
+*.vcf.gz
+*.bed
+*.bed.gz
+*.bigwig
+*.bw
+
+# Data directories
+00_raw_reads/
+03_qc_after_processing/
+05_genome_quality_assessment/
+06_genome_annotation/
+data/
+results/
+# SPAdes assembly output - large files
+short_read_only_assembly/spades_output/*.fasta
+short_read_only_assembly/spades_output/*.fastg
+short_read_only_assembly/spades_output/*.gfa
+short_read_only_assembly/spades_output/corrected/
+short_read_only_assembly/spades_output/tmp/
+short_read_only_assembly/spades_output/K*/
+short_read_only_assembly/spades_output/mismatch_corrector/
+short_read_only_assembly/
+01_qc_before_processing/
+03_qc_after_processing/
+
+# QC reports (regenerable, large)
+01_qc_before_processing/
+03_qc_after_processing/

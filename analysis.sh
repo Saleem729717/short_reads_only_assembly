@@ -45,6 +45,9 @@ echo "  ✓ Created: 02_process_reads"
 echo "  ✓ Created: 03_qc_after_processing"
 mkdir -p 03_qc_after_processing
 
+echo "  ✓ Created: short_read_only_assembly"
+mkdir -p short_read_only_assembly
+
 # Summary
 echo ""
 echo "============================================"
@@ -90,3 +93,13 @@ conda activate 02_multiqc
 multiqc -p -o "${BASE_DIR}/03_qc_after_processing/multiqc/fastqc_multiqc_processsed" ./
 echo ""
 echo "quality control and read processing completed"
+
+# Short read assembly using SPAdes
+cd "${BASE_DIR}/short_read_only_assembly"
+conda activate 03_spades
+spades.py \
+    -1 "${BASE_DIR}/02_process_reads/SRR8893090_1.processed.fastq.gz" \
+    -2 "${BASE_DIR}/02_process_reads/SRR8893090_2.processed.fastq.gz" \
+    -o "${BASE_DIR}/short_read_only_assembly/spades_output" \
+    --careful -t 16 -m 24
+echo ""
